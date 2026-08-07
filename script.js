@@ -1,7 +1,7 @@
 let secretNum = generateSecretNumber();
 
 // DOM Elements
-const tn = document.getElementById('tn'); // Assuming 'tn' is your submit button ID
+const btn = document.getElementById('btn'); // Assuming 'tn' is your submit button ID
 const numInput = document.getElementById('numInput');
 const resetBtn = document.getElementById('resetBtn'); // Add a reset button to your HTML
 
@@ -11,7 +11,7 @@ function generateSecretNumber() {
 }
 
 // 2. Submit Button Click Handler
-tn.addEventListener('click', function() {
+btn.addEventListener('click', function() {
     const rawInput = numInput.value.trim();
 
     if (rawInput === '') {
