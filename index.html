@@ -11,23 +11,23 @@
     <div class="container">
         <h1 class="title">Find A secret Number</h1>
 
-        <input type="number" id="number" name="number" class="input-fields" placeholder="Enter a number" min="0">
+        <input type="number" id="numInput" name="number" class="input-fields" placeholder="Enter a number" min="0">
 
 
         <button id="btn" class="login-btn">CHECK NUMBER</button>
     </div>
 
 
-    <div id="customModal" class="modal-overlay">
+     <div class="modal-overlay" id="customModal">
+
         <div class="modal-box">
-            <h3 id="modalTitle" class="modal-title">Login Successful</h3>
-            
-        <input type="number" id="number" name="number" class="input-fields" placeholder="Enter a number" min="0">
-            <button onclick="closeModal()" class="modal-close-btn">
-                Close
-            </button>
+                    <p class="modal-title" id="modalMessage">Hello</p>
+
+        <button onclick="closeModal()" class="modal-close-btn" id="btn">OK</button>
         </div>
     </div>
+
+  
 
     <script src="script.js"></script>
 </body>
